@@ -31,7 +31,6 @@ const Form = () => {
           <option id="1">JHS</option>
           <option id="2">SHS</option>
         </select>
-        
       </div>
       <div>
         <label htmlFor="message">Message: </label>

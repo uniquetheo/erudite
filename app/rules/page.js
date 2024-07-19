@@ -10,7 +10,7 @@ const RulesPage = () => {
       <section className="px-20 py-8">
         <div>
           <h2 className="pb-4 text-xl font-bold">
-            Rules and Regulations for "ERUDITE CHALLENGE" Competition
+            Rules and Regulations for &quot;ERUDITE CHALLENGE&quot; Competition
           </h2>
         </div>
         <div className="text-left">
@@ -41,7 +41,7 @@ const RulesPage = () => {
                 </li>
                 <li>
                   All required documents, including authorization from the
-                  school’s headmaster or principal
+                  school&apos;s headmaster or principal
                 </li>
               </ul>
             </li>
@@ -62,9 +62,8 @@ const RulesPage = () => {
               Quiz Format:
               <ul>
                 <li>
-                  Preliminary Rounds: M ultiple-choice and short-answer
-                  questions a cross IT, STEM , Critical Thinking, and
-                  Government.
+                  Preliminary Rounds: Multiple-choice and short-answer questions
+                  a cross IT, STEM , Critical Thinking, and Government.
                 </li>
                 <li>
                   Quarterfinals: Written and oral questions, including a buzzer

@@ -1,4 +1,5 @@
 import Button from "@/components/ui/Button";
+import Image from "next/image";
 import React from "react";
 
 const RegistrationPage = () => {
@@ -26,7 +27,7 @@ const RegistrationPage = () => {
           <p>
             Visit the official &quot;ERUDITE CHALLENGE&quot; website at
             www.eruditechallenge.com. Click on the &quot;Register Now&quot;
-            button on the homepage. Fill out the online registration form with
+            Button on the homepage. Fill out the online registration form with
             the following details: School name and address Team members&apos;
             names, grades, and ages Faculty advisor&apos;s name and contact
             information Email address and phone number for correspondence.
@@ -50,9 +51,12 @@ const RegistrationPage = () => {
         </div>
         <div>
           <div>
-            <img
-              src="../registration_open.jpg"
+            <Image
+              width={2500}
+              height={1667}
+              src="/../registration_open.jpg"
               alt="registration is open image"
+              unoptimized
             />
           </div>
           <Button link="registration">Register Now</Button>

@@ -6,7 +6,7 @@ const AboutUs = () => {
       <div className="px-20 pt-10">About Us</div>
       <div className="px-20 py-10">
         <p>
-          "ERUDITE CHALLENGE" is an engaging and competitive quiz show designed
+        &quot;ERUDITE CHALLENGE&quot; is an engaging and competitive quiz show designed
           for junior high and senior high school students in Ghana. This annual
           event aims to challenge students in four key areas: Information
           Technology (IT), Science, Technology, Engineering, and M athematics

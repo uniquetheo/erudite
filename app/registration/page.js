@@ -1,12 +1,9 @@
-import Footer from "@/components/Footer";
-import NavBar from "@/components/NavBar";
-import Button from "@/components/ui/button";
+import Button from "@/components/ui/Button";
 import React from "react";
 
 const RegistrationPage = () => {
   return (
     <main>
-      <NavBar />
       <section className="px-20 py-8">
         <div>
           <h2 className="pb-4 text-xl font-bold">Eligibility & Registration</h2>
@@ -23,16 +20,16 @@ const RegistrationPage = () => {
           </p>
           <p>
             • Each school can register a team consisting of 4 students and 1
-            faculty advisor. 
+            faculty advisor.
           </p>
           <h3>Registration Process:</h3>
           <p>
-            Visit the official "ERUDITE CHALLENGE" website at
-            www.eruditechallenge.com. Click on the "Register Now" button on the
-            homepage. Fill out the online registration form with the following
-            details: School name and address Team members' names, grades, and
-            ages Faculty advisor's name and contact information Email address
-            and phone number for correspondence.
+            Visit the official &quot;ERUDITE CHALLENGE&quot; website at
+            www.eruditechallenge.com. Click on the &quot;Register Now&quot;
+            button on the homepage. Fill out the online registration form with
+            the following details: School name and address Team members&apos;
+            names, grades, and ages Faculty advisor&apos;s name and contact
+            information Email address and phone number for correspondence.
           </p>
           <h3>Registration Fee:</h3>
           <p>
@@ -44,7 +41,7 @@ const RegistrationPage = () => {
           <p>
             After completing the online registration form and payment, schools
             must upload the following documents: A letter of authorization from
-            the school’s headmaster or principal.
+            the school&apos;s headmaster or principal.
           </p>
           <p>
             All documents should be in PDF or JPEG format and uploaded through
@@ -61,7 +58,6 @@ const RegistrationPage = () => {
           <Button link="registration">Register Now</Button>
         </div>
       </section>
-      <Footer />
     </main>
   );
 };

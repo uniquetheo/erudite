@@ -3,18 +3,18 @@ import React from "react";
 
 const HeroSection = () => {
   return (
-    <section className="flex flex-col items-center w-full bg-white px-20">
-      <div className="drop-shadow-xl ">
-        <div>
-          <Image
-            width={1800}
-            height={1200}
-            src="/../54-2.jpg"
-            alt="winners being presented a trophy"
-            unoptimized
-          />
+    <section className="flex flex-col items-center w-full  px-20 md:px-30">
+      <div className="relative drop-shadow-xl w-full h-[60vh]">
+        <Image
+          className="object-cover w-full h-full"
+          layout="fill"
+          src="/../54-2.jpg"
+          alt="winners being presented a trophy"
+          unoptimized
+        />
+        <div className="absolute bottom-4 left-0 w-full text-center text-white py-4 bg-black bg-opacity-50">
+          Unlocking Brilliance to shape the Future...
         </div>
-        <div className="py-4">Unlocking Brilliance to shape the Future...</div>
       </div>
     </section>
   );

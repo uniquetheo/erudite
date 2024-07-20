@@ -1,12 +1,9 @@
-import Footer from "@/components/Footer";
-import NavBar from "@/components/NavBar";
 import Button from "@/components/ui/Button";
 import React from "react";
 
 const RulesPage = () => {
   return (
     <main>
-      <NavBar />
       <section className="px-20 py-8">
         <div>
           <h2 className="pb-4 text-xl font-bold">
@@ -125,7 +122,6 @@ const RulesPage = () => {
           <span>Other Links</span>
         </div>
       </section>
-      <Footer />
     </main>
   );
 };

@@ -5,9 +5,9 @@ import React from "react";
 const RegistrationPage = () => {
   return (
     <main>
-      <section className="px-20 py-8">
+      <section className="max-w-7xl mx-auto py-8">
         <div>
-          <h2 className="pb-4 text-xl font-bold">Eligibility & Registration</h2>
+          <h2 className="py-10 text-xl font-bold">Eligibility & Registration</h2>
         </div>
         <div className="text-left flex flex-col gap-4">
           <p>

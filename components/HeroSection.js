@@ -3,7 +3,7 @@ import React from "react";
 
 const HeroSection = () => {
   return (
-    <section className="flex flex-col items-center w-full  px-20 md:px-30">
+    <section className="flex flex-col items-center w-full  max-w-7xl mx-auto md:px-30">
       <div className="relative drop-shadow-xl w-full h-[60vh]">
         <Image
           className="object-cover w-full h-full"

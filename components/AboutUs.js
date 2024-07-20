@@ -2,9 +2,9 @@ import React from "react";
 
 const AboutUs = () => {
   return (
-    <section>
-      <div className="px-20 pt-10">About Us</div>
-      <div className="px-20 py-10">
+    <section className="w-full max-w-7xl mx-auto bg-white">
+      <div className="py-10 text-xl font-bold">About Us</div>
+      <div className="py-8 px-10">
         <p>
         &quot;ERUDITE CHALLENGE&quot; is an engaging and competitive quiz show designed
           for junior high and senior high school students in Ghana. This annual

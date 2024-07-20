@@ -3,9 +3,9 @@ import Button from "./ui/Button";
 
 const ContactUs = () => {
   return (
-    <section className="bg-white">
-      <div className="px-20 pt-10">Contact Us</div>
-      <div className="px-20 py-10">
+    <section className="w-full max-w-7xl mx-auto bg-white">
+      <div className="py-10 text-xl font-bold">Contact Us</div>
+      <div className="py-10">
         <Form />
       </div>
     </section>

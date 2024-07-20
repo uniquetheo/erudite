@@ -4,9 +4,9 @@ import React from "react";
 const SponsorPage = () => {
   return (
     <main>
-      <section>
+      <section className="max-w-7xl mx-auto py-8 px-10 bg-white">
         <div>
-          <h2>Why Sponsor</h2>
+          <h2 className="py-10 text-xl font-bold">Why Sponsor</h2>
         </div>
         <div>
           <p>
@@ -23,9 +23,9 @@ const SponsorPage = () => {
             CHALLENGE&quot; competition, please contact our sponsorship team:
           </p>
         </div>
-        <div>
+        {/* <div>
           <Button link="/sponsor">Sponsor</Button>
-        </div>
+        </div> */}
         <div className="p-8 rounded-xl">
           <h3>Our Sponsors</h3>
         </div>

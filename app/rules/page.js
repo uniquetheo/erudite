@@ -4,7 +4,7 @@ import React from "react";
 const RulesPage = () => {
   return (
     <main>
-      <section className="px-20 py-8">
+      <section className="max-w-7xl mx-auto py-8 px-10 bg-white">
         <div>
           <h2 className="pb-4 text-xl font-bold">
             Rules and Regulations for &quot;ERUDITE CHALLENGE&quot; Competition

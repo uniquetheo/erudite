@@ -1,12 +1,13 @@
 import React from "react";
 import Button from "./ui/Button";
+import ContactForm from "./ui/ContactForm";
 
 const ContactUs = () => {
   return (
     <section className="w-full max-w-7xl mx-auto bg-white">
       <div className="py-10 text-xl font-bold">Contact Us</div>
       <div className="py-10">
-        <Form />
+        <ContactForm />
       </div>
     </section>
   );

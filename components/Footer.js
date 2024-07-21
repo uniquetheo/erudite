@@ -6,7 +6,7 @@ const Footer = () => {
   return (
     <footer className="w-full  max-w-7xl mx-auto">
       <div className="w-full h-[400px] relative bg-[#000000c0]">
-        <div className="absolute top-0 bottom-0 left-0 right-0 w-full opacity-20">
+        <div className="absolute top-0 bottom-0 left-0 right-0 w-full opacity-20 ">
           <Image
             className="object-cover w-full h-full"
             layout="fill"

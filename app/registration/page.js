@@ -5,7 +5,7 @@ import React from "react";
 const RegistrationPage = () => {
   return (
     <main>
-      <section className="max-w-7xl mx-auto py-8">
+      <section className="max-w-7xl mx-auto bg-white px-10 py-8">
         <div>
           <h2 className="py-10 text-xl font-bold">Eligibility & Registration</h2>
         </div>
@@ -17,7 +17,7 @@ const RegistrationPage = () => {
           </p>
           <p>
             Information Technology (IT) Science, Technology, Engineering, and
-            Mathematics (STEM ) Critical Thinking Government{" "}
+            Mathematics (STEM ) Critical Thinking Government.
           </p>
           <p>
             • Each school can register a team consisting of 4 students and 1

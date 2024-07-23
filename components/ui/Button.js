@@ -5,7 +5,7 @@ const Button = (props) => {
   return (
     <Link
       href={props.link}
-      className="bg-blue-800 text-white px-8 py-3 rounded-md"
+      className="w-full bg-gradient-to-r from-[#92318d] to-[#f26a3d] text-white py-3 px-8 rounded-md hover:text-green-500 transition-colors flex justify-center items-center"
     >
       {props.children}
     </Link>

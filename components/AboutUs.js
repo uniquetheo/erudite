@@ -1,4 +1,6 @@
 import React from "react";
+import GoalSection from "./GoalSection";
+import VisionMission from "./ui/VissionMission";
 
 const AboutUs = () => {
   return (
@@ -15,6 +17,8 @@ const AboutUs = () => {
           emphasis on real-world applications and problem-solving skills.
         </p>
       </div>
+      <VisionMission />
+      <GoalSection />
     </section>
   );
 };

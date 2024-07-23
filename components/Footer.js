@@ -42,7 +42,10 @@ const Footer = () => {
             </div>
           </div>
           <div className="w-full px-20 py-10 flex justify-center">
+          <div className="py-4 flex justify-center">
+          <div className="">
             <Button link="/registration">Register</Button>
+            </div></div>
           </div>
         </div>
       </div>

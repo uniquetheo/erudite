@@ -83,7 +83,7 @@ const ContactForm = () => {
       <div className="mb-4">
         <button
           type="submit"
-          className="w-full bg-blue-500 text-white p-2 rounded-md hover:bg-blue-700 transition-colors flex justify-center items-center"
+          className="w-full bg-gradient-to-r from-[#92318d] to-[#f26a3d] hover:bg-blue-700 text-white hover:text-green-500 p-2 rounded-md  transition-colors flex justify-center items-center"
         >
           <FaPaperPlane className="mr-2" /> Submit
         </button>

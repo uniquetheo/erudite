@@ -7,7 +7,9 @@ const RegistrationPage = () => {
     <main>
       <section className="max-w-7xl mx-auto bg-white px-10 py-8">
         <div>
-          <h2 className="py-10 text-xl font-bold">Eligibility & Registration</h2>
+          <h2 className="py-10 text-xl font-bold">
+            Eligibility & Registration
+          </h2>
         </div>
         <div className="text-left flex flex-col gap-4">
           <p>
@@ -59,7 +61,11 @@ const RegistrationPage = () => {
               unoptimized
             />
           </div>
-          <Button link="registration">Register Now</Button>
+          <div className="py-4 flex justify-center">
+            <div className="">
+              <Button link="registration">Register Now</Button>
+            </div>
+          </div>
         </div>
       </section>
     </main>

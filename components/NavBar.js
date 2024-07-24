@@ -18,13 +18,23 @@ const NavBar = () => {
   const [menuOpen, setMenuOpen] = useState(false);
 
   return (
-    <nav className="bg-white w-full h-[80px] sm:h-full px-4 sm:px-16 sticky top-0 drop-shadow-xl z-10">
-      <div className="max-w-7xl mx-auto flex justify-between items-center">
-        <Logo />
-        <div className="flex items-center">
-          <Menu menuOpen={menuOpen} />
+    // className="bg-white w-full h-[80px] sm:h-full px-4 sm:px-16 sticky top-0 drop-shadow-xl z-10"
+    <nav
+      className={`w-full  bg-white h-full px-4 sm:px-16 sticky top-0 drop-shadow-xl z-10 ${
+        menuOpen ? "rounded-2xl" : ""
+      }`}
+    >
+      {/* max-w-7xl mx-auto flex justify-between items-center */}
+      <div
+        className={`w-full max-w-7xl flex ${
+          menuOpen ? "flex-col" : ""
+        } justify-between items-center min-h-14 sm:min-h-20 relative`}
+      >
+        <Logo className="" />
+        <div className={`flex items-center ${menuOpen ? "pt-20 pb-5" : ""}`}>
+          <Menu menuOpen={menuOpen} className="flex flex-1" />
           <button
-            className="sm:hidden ml-4"
+            className={`sm:hidden ml-4 absolute top-4 right-0`}
             onClick={() => setMenuOpen(!menuOpen)}
           >
             {menuOpen ? (
@@ -42,15 +52,17 @@ const NavBar = () => {
 const Logo = () => {
   return (
     <Link href={"/"}>
-      <Image
-        className="w-[100px]"
-        src={logo}
-        width={1457}
-        height={1201}
-        alt="Erudite Logo"
-        priority
-        unoptimized
-      />
+      <div className="w-20 h-20 sm:w-[120px] sm:h-[120px] absolute top-0 left-0 bg-white rounded-full">
+        <Image
+          src={logo}
+          // width={1457}
+          // height={1201}
+          layout="fill"
+          alt="Erudite Logo"
+          priority
+          unoptimized
+        />
+      </div>
     </Link>
   );
 };

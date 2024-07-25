@@ -11,7 +11,7 @@ const RegistrationPage = () => {
             Eligibility & Registration
           </h2>
         </div>
-        <div className="text-left flex flex-col gap-4">
+        <div className="text-left flex flex-col gap-4 px-10 pb-10">
           <p>
             • Open to all junior high and senior high schools in Ghana. (i.e.
             Government and Private schools) Students are texted on these key
@@ -51,7 +51,7 @@ const RegistrationPage = () => {
             the registration portal.
           </p>
         </div>
-        <div>
+        <div className="px-10">
           <div>
             <Image
               width={2500}

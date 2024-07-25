@@ -1,4 +1,4 @@
-import Button from "@/components/ui/Button";
+import { SecondaryBtn } from "@/components/ui/Button";
 import React from "react";
 
 const RulesPage = () => {
@@ -10,7 +10,7 @@ const RulesPage = () => {
             Rules and Regulations for &quot;ERUDITE CHALLENGE&quot; Competition
           </h2>
         </div>
-        <div className="text-left">
+        <div className="text-left custom-list">
           <ol>
             <li>
               Eligibility:
@@ -115,9 +115,11 @@ const RulesPage = () => {
             </li>
           </ol>
         </div>
-        <div>
-          <Button link="/registration">Read More</Button>
+        <div className="py-4 flex justify-center">
+        <div className="">
+          <SecondaryBtn>Read more...</SecondaryBtn>
         </div>
+      </div>
         <div>
           <span>Other Links</span>
         </div>

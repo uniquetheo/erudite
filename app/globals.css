@@ -48,6 +48,15 @@ body {
   border-image-source: linear-gradient(90deg, #92318d, #f26a3d);
 }
 
+.custom-list ol > li {
+  list-style-type: number;
+  padding: 15px 10px;
+}
+
+.custom-list ul > li {
+  list-style-type: disc;
+  padding: 8px 0;
+}
 
 @layer utilities {
   .text-balance {

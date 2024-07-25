@@ -30,18 +30,20 @@ const contactDetails = [
 
 const ContactUs = () => {
   return (
-    <section className="w-full max-w-7xl mx-auto bg-white">
-      <div className="grid grid-cols-1 md:grid-cols-2 px-10 py-10">
+    <section className="w-full max-w-7xl mx-auto bg-slate-50">
+      <div className="grid grid-cols-1 md:grid-cols-2 p-10 gap-10">
         <div className="flex flex-col items-center">
           <div className="py-10 text-xl font-bold">Contact Us</div>
-          <div className="text-left flex flex-col w-[300px]">
+          <div className="text-left flex flex-col w-[350px] bg-white p-8 shadow-lg rounded-2xl">
             {contactDetails.map((item, id) => {
               return (
                 <div
                   key={item.id}
                   className="grid grid-cols-[30px,1fr] h-full items-center gap-4 py-4"
                 >
-                  <div className="flex items-center justify-center border w-8 h-8 rounded-full">{item.icon}</div>
+                  <div className="flex items-center justify-center border w-8 h-8 rounded-full">
+                    {item.icon}
+                  </div>
                   <span>{item.text}</span>
                 </div>
               );

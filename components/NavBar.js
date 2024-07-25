@@ -26,7 +26,7 @@ const NavBar = () => {
     >
       {/* max-w-7xl mx-auto flex justify-between items-center */}
       <div
-        className={`w-full max-w-7xl flex ${
+        className={`w-full mx-auto max-w-7xl flex ${
           menuOpen ? "flex-col" : ""
         } justify-between items-center min-h-14 sm:min-h-20 relative`}
       >

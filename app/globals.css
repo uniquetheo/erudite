@@ -28,6 +28,27 @@ body {
     rgb(var(--background-start-rgb)); */
 }
 
+.gradient-text {
+  background: linear-gradient(90deg, #92318d, #f26a3d);
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent;
+}
+
+.gradient-border {
+  border: 2px solid; /* Adjust the border width as needed */
+  border-image-slice: 1;
+  border-image-source: linear-gradient(90deg, #92318d, #f26a3d);
+}
+
+.gradient-border-dotted-rounded {
+  border: 4px dotted; /* Adjust the border width and style as needed */
+  border-radius: 0.5rem; /* Adjust the border radius as needed */
+  border-image-slice: 1;
+  border-image-source: linear-gradient(90deg, #92318d, #f26a3d);
+}
+
+
 @layer utilities {
   .text-balance {
     text-wrap: balance;

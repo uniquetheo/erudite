@@ -2,29 +2,31 @@
 
 import Image from "next/image";
 import Link from "next/link";
+import { usePathname } from "next/navigation";
 import React, { useState } from "react";
 import { FaBars, FaTimes } from "react-icons/fa";
 
 const logo = "/../logosm.png";
 
 const menuItems = [
-  { name: "Home", pathname: "/", id: 1 },
-  { name: "Rules", pathname: "rules", id: 2 },
-  { name: "Sponsors", pathname: "sponsor", id: 3 },
-  { name: "Registration", pathname: "registration", id: 4 },
+  { name: "Home", slug: "/", id: 1 },
+  { name: "Rules", slug: "/rules", id: 2 },
+  { name: "Sponsors", slug: "/sponsor", id: 3 },
+  { name: "Registration", slug: "/registration", id: 4 },
 ];
 
 const NavBar = () => {
   const [menuOpen, setMenuOpen] = useState(false);
+  const pathname = usePathname();
+
+  console.log("path name: ", pathname);
 
   return (
-    // className="bg-white w-full h-[80px] sm:h-full px-4 sm:px-16 sticky top-0 drop-shadow-xl z-10"
     <nav
-      className={`w-full  bg-white h-full px-4 sm:px-16 sticky top-0 drop-shadow-xl z-10 ${
+      className={`w-full bg-white h-full px-4 sm:px-16 sticky top-0 drop-shadow-xl z-10 ${
         menuOpen ? "rounded-2xl" : ""
       }`}
     >
-      {/* max-w-7xl mx-auto flex justify-between items-center */}
       <div
         className={`w-full mx-auto max-w-7xl flex ${
           menuOpen ? "flex-col" : ""
@@ -32,7 +34,12 @@ const NavBar = () => {
       >
         <Logo className="" />
         <div className={`flex items-center ${menuOpen ? "pt-20 pb-5" : ""}`}>
-          <Menu menuOpen={menuOpen} className="flex flex-1" />
+          <Menu
+            menuOpen={menuOpen}
+            setMenuOpen={setMenuOpen}
+            pathname={pathname}
+            className="flex flex-1"
+          />
           <button
             className={`sm:hidden ml-4 absolute top-4 right-0`}
             onClick={() => setMenuOpen(!menuOpen)}
@@ -67,7 +74,7 @@ const Logo = () => {
   );
 };
 
-const Menu = ({ menuOpen }) => {
+const Menu = ({ menuOpen, setMenuOpen, pathname }) => {
   return (
     <div
       className={`flex-col sm:flex-row sm:flex ${
@@ -76,9 +83,12 @@ const Menu = ({ menuOpen }) => {
     >
       {menuItems.map((item) => (
         <Link
-          href={item.pathname}
+          href={item.slug}
           key={item.id}
-          className="cursor-pointer hover:text-blue-800 text-lg"
+          onClick={()=>setMenuOpen(false)}
+          className={`${
+            pathname === item.slug ? "gradient-text" : ""
+          } cursor-pointer hover:text-blue-800 text-lg`}
         >
           {item.name}
         </Link>

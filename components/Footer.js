@@ -1,11 +1,12 @@
 import React from "react";
 import Button from "./ui/Button";
 import Image from "next/image";
+import { IoIosArrowUp } from "react-icons/io";
 
 const Footer = () => {
   return (
     <footer className="w-full  max-w-7xl mx-auto">
-      <div className="w-full h-[400px] relative bg-[#000000c0]">
+      <div className="w-full sm:h-[250px] [380px] relative bg-[#000000c0]">
         <div className="absolute top-0 bottom-0 left-0 right-0 w-full opacity-20 ">
           <Image
             className="object-cover w-full h-full"
@@ -16,9 +17,9 @@ const Footer = () => {
           />
         </div>
         <div className="text-white px-10">
-          <div className="max-w-7xl mx-auto py-10 flex text-left justify-between">
+          <div className="max-w-7xl mx-auto py-10 flex flex-col sm:flex-row text-left justify-between gap-4">
             <div>
-              <h3>Locate us</h3>
+              <h3 className="font-bold">Locate us</h3>
               <ul>
                 <li>Abrantie</li>
                 <li>Lapaz</li>
@@ -26,14 +27,14 @@ const Footer = () => {
               </ul>
             </div>
             <div>
-              <h3>Contact us</h3>
+              <h3 className="font-bold">Contact us</h3>
               <ul>
                 <li>Call/WhatsApp: +233 54 176 0440</li>
                 <li>Email: eruditechallenge@gmail.com</li>
               </ul>
             </div>
             <div>
-              <h3>Other Links</h3>
+              <h3 className="font-bold">Other Links</h3>
               <ul>
                 <li>Gallery</li>
                 <li>Video</li>
@@ -42,17 +43,21 @@ const Footer = () => {
             </div>
           </div>
           <div className="w-full px-20 py-10 flex justify-center">
-          <div className="py-4 flex justify-center">
-          <div className="">
-            <Button link="/registration">Register</Button>
-            </div></div>
+            <div className="py-4 flex justify-center absolute bottom-0 right-5">
+              <div className="">
+                <Button link="/registration">
+                  <IoIosArrowUp />
+                </Button>
+              </div>
+            </div>
           </div>
         </div>
       </div>
-      <div className="flex w-full justify-center items-center bg-white">
-        <span>Copyright @ 2010-2024 Erudite Challenge</span>
-        <div className="w-20 h-20 flex items-center">
+      <div className="flex w-full justify-center items-center min-h-10 bg-white">
+        <span className="text-xs sm:text-md">Copyright @ 2010-2024 Erudite Challenge</span>
+        <div className="w-[60px] h-[60px] flex items-center">
           <Image
+            className="object-fill w-full"
             width={80}
             height={80}
             unoptimized

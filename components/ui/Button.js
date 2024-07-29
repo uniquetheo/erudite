@@ -15,5 +15,5 @@ const Button = (props) => {
 export default Button;
 
 export const SecondaryBtn = (props) => {
-  return <button className="w-full gradient-text gradient-border rounded-xl py-3 px-8">{props.children}</button>;
+  return <button className="w-full gradient-text hover:text-green-500 py-3 px-8">{props.children}</button>;
 };

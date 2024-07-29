@@ -5,7 +5,7 @@ import Button from "./ui/Button";
 const GoalSection = () => {
   return (
     <section className="max-w-7xl mx-auto p-4 sm:p-8 bg-white">
-      <div className="grid grid-cols-1 md:grid-cols-2 bg-slate-800 p-8">
+      <div className="grid grid-cols-1 md:grid-cols-2 bg-slate-800 sm:p-8 p-2">
         <div className="bg-red-200 h-60">
           <Image
             className="object-cover w-full h-full"

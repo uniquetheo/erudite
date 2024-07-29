@@ -1,5 +1,6 @@
 import Image from "next/image";
 import React from "react";
+import { FaArrowCircleUp } from "react-icons/fa";
 import { HiOutlineLightBulb } from "react-icons/hi";
 
 const HeroSection = () => {
@@ -17,8 +18,8 @@ const HeroSection = () => {
         />
         {/* absolute bottom-4 left-0 */}
         <div className="absolute bottom-0 bg-white w-full">
-          <div className="text-center gradient-text sm:py-4 py-2 mx-auto max-w-[450px]">
-            {/* <HiOutlineLightBulb /> */}
+          <div className="text-center flex items-center justify-center gap-3 gradient-text sm:py-4 py-2 mx-auto max-w-[450px]">
+            <HiOutlineLightBulb className="text-[#92318d]" />
             Unlocking Brilliance to shape the Future...
           </div>
         </div>

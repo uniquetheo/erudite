@@ -7,7 +7,7 @@ const HeroSection = () => {
   return (
     <section className="flex flex-col items-center w-full  max-w-7xl mx-auto md:px-30">
       {/* relative */}
-      <div className="relative drop-shadow-xl w-full h-[60vh] flex flex-col items-center">
+      <div className="relative drop-shadow-xl w-full sm:h-[60vh] h-[40vh]  flex flex-col items-center">
         <Image
           className="object-cover w-full"
           layout="fill"

@@ -19,8 +19,6 @@ const NavBar = () => {
   const [menuOpen, setMenuOpen] = useState(false);
   const pathname = usePathname();
 
-  console.log("path name: ", pathname);
-
   return (
     <nav
       className={`w-full bg-white h-full px-4 sm:px-16 sticky top-0 drop-shadow-xl z-10 ${

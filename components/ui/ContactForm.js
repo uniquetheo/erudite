@@ -1,14 +1,14 @@
-"use client"
+"use client";
 
-import React, { useState } from 'react';
-import { FaUser, FaEnvelope, FaEdit, FaPaperPlane } from 'react-icons/fa';
+import React, { useState } from "react";
+import { FaUser, FaEnvelope, FaEdit, FaPaperPlane } from "react-icons/fa";
 
 const ContactForm = () => {
   const [formData, setFormData] = useState({
-    name: '',
-    email: '',
-    subject: '',
-    message: '',
+    name: "",
+    email: "",
+    subject: "",
+    message: "",
   });
 
   const handleChange = (e) => {
@@ -19,11 +19,17 @@ const ContactForm = () => {
   const handleSubmit = (e) => {
     e.preventDefault();
     // Handle form submission, e.g., send data to an API or email service
-    console.log('Form submitted:', formData);
+    console.log("Form submitted:", formData);
+    setFormData((prev) => {
+      return { ...prev, name: "", email: "", subject: "", message: "" };
+    });
   };
 
   return (
-    <form onSubmit={handleSubmit} className="max-w-lg mx-auto p-4 bg-white shadow-md rounded-lg">
+    <form
+      onSubmit={handleSubmit}
+      className="max-w-lg mx-auto p-4 bg-white shadow-md rounded-lg"
+    >
       <div className="mb-4">
         <label htmlFor="name" className="block text-gray-700 font-bold mb-2">
           <FaUser className="inline mr-2" /> Name

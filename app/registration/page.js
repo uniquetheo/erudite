@@ -25,7 +25,7 @@ const RegistrationPage = () => {
             • Each school can register a team consisting of 4 students and 1
             faculty advisor.
           </p>
-          <h3>Registration Process:</h3>
+          <h3 className="text-base font-bold">Registration Process:</h3>
           <p>
             Visit the official &quot;ERUDITE CHALLENGE&quot; website at
             www.eruditechallenge.com. Click on the &quot;Register Now&quot;
@@ -34,21 +34,23 @@ const RegistrationPage = () => {
             names, grades, and ages Faculty advisor&apos;s name and contact
             information Email address and phone number for correspondence.
           </p>
-          <h3>Registration Fee:</h3>
+          <h3 className="text-base font-bold">Registration Fee:</h3>
           <p>
             A nominal registration fee of GHS 150 per team is required. Payment
             can be made via mobile money or bank transfer Detailed payment
             instructions will be provided on the registration page.
           </p>
-          <h3>Submission of Documents:</h3>
+          <h3 className="text-base font-bold">Submission of Documents:</h3>
           <p>
             After completing the online registration form and payment, schools
             must upload the following documents: A letter of authorization from
             the school&apos;s headmaster or principal.
           </p>
           <p>
-            All documents should be in PDF or JPEG format and uploaded through
-            the registration portal.
+            <span className="text-red-500 font-bold">All documents</span> should
+            be in <span className="text-red-500 font-bold">PDF </span>or
+            <span className="text-red-500 font-bold"> JPEG</span> format and
+            uploaded through the registration portal.
           </p>
         </div>
         <div className="sm:px-10">

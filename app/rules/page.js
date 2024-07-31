@@ -88,14 +88,14 @@ const RulesPage = () => {
             </li>
             <li>
               Conduct:
-              <ul>
+              <p>
                 All participants must adhere to the highest standards of honesty
                 and integrity.
-              </ul>
-              <ul>
+              </p>
+              <p>
                 Any form of cheating, plagiarism, or misconduct will result in
                 immediate disqualification of the team.
-              </ul>
+              </p>
             </li>
             <li>
               Timing:
@@ -120,7 +120,7 @@ const RulesPage = () => {
           <SecondaryBtn>Read more...</SecondaryBtn>
         </div>
       </div>
-        <div>
+        <div className="hidden">
           <span>Other Links</span>
         </div>
       </section>

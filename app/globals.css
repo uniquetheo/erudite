@@ -51,11 +51,17 @@ body {
 .custom-list ol > li {
   list-style-type: number;
   padding: 15px 10px;
+  font-weight: 500;
+}
+
+.custom-list ol > li > p {
+  font-weight: 400;
 }
 
 .custom-list ul > li {
   list-style-type: disc;
   padding: 8px 0;
+  font-weight: 400;
 }
 
 @layer utilities {

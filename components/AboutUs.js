@@ -2,6 +2,7 @@ import React from "react";
 import GoalSection from "./GoalSection";
 import VisionMission from "./ui/VissionMission";
 import {SecondaryBtn} from "./ui/Button";
+import Link from "next/link";
 
 const AboutUs = () => {
   return (
@@ -21,9 +22,9 @@ const AboutUs = () => {
         </p>
       </div>
       <div className="py-4 flex justify-center">
-        <div className="">
+        <Link href={`/about-us`} className="">
           <SecondaryBtn>Read more...</SecondaryBtn>
-        </div>
+        </Link>
       </div>
       <VisionMission />
       <GoalSection />

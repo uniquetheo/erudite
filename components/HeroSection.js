@@ -1,6 +1,5 @@
 import Image from "next/image";
 import React from "react";
-import { FaArrowCircleUp } from "react-icons/fa";
 import { HiOutlineLightBulb } from "react-icons/hi";
 
 const HeroSection = () => {

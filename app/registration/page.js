@@ -13,7 +13,7 @@ const RegistrationPage = () => {
         </div>
         <div className="text-left flex flex-col gap-4 sm:px-10 pb-10">
           <p>
-            • Open to all junior high and senior high schools in Ghana. (i.e.
+            • Open to all Junior High and Senior High Schools in Ghana. (i.e.
             Government and Private schools) Students are texted on these key
             areas:
           </p>

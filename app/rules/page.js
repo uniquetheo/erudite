@@ -16,7 +16,7 @@ const RulesPage = () => {
               Eligibility:
               <ul>
                 <li>
-                  The competition is open to junior high and senior high school
+                  The competition is open to Junior High and Senior High School
                   students across Ghana.
                 </li>
                 <li>
@@ -116,10 +116,10 @@ const RulesPage = () => {
           </ol>
         </div>
         <div className="py-4 flex justify-center">
-        <div className="">
-          <SecondaryBtn>Read more...</SecondaryBtn>
+          <div className="">
+            <SecondaryBtn>Read more...</SecondaryBtn>
+          </div>
         </div>
-      </div>
         <div className="hidden">
           <span>Other Links</span>
         </div>

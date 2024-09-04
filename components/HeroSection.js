@@ -9,7 +9,7 @@ const HeroSection = () => {
       <div className="relative drop-shadow-xl w-full sm:h-[60vh] h-[40vh]  flex flex-col items-center">
         <Image
           className="object-cover w-full"
-          layout="fill"
+          fill
           src="/../54-2.jpg"
           alt="winners being presented a trophy"
           priority

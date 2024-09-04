@@ -13,6 +13,7 @@ const menuItems = [
   { name: "Rules", slug: "/rules", id: 2 },
   { name: "Sponsors", slug: "/sponsor", id: 3 },
   { name: "Registration", slug: "/registration", id: 4 },
+  { name: "About Us", slug: "/about-us", id: 5 },
 ];
 
 const NavBar = () => {
@@ -83,7 +84,7 @@ const Menu = ({ menuOpen, setMenuOpen, pathname }) => {
         <Link
           href={item.slug}
           key={item.id}
-          onClick={()=>setMenuOpen(false)}
+          onClick={() => setMenuOpen(false)}
           className={`${
             pathname === item.slug ? "gradient-text" : ""
           } cursor-pointer hover:text-blue-800 text-lg`}

@@ -2,6 +2,7 @@
 
 import React, { useState } from "react";
 import { SecondaryBtn } from "./Button";
+import Link from "next/link";
 
 const text = [
   "To inspire and empower the next generation of thinkers and leaders in Ghana by fostering a love for learning, critical thinking, and innovation through engaging and educational quiz competitions.",
@@ -26,19 +27,27 @@ const VisionMission = () => {
           className="bg-white h-[150px] sm:w-[200px] sm:h-[200px] rounded-full sm:absolute right-0 top-[-20px] cursor-pointer flex items-center justify-center"
         >
           <div className="flex flex-col w-[120px] h-[120px] sm:w-[160px] sm:h-[160px] rounded-full border border-slate-800 border-dashed items-center justify-center">
-            <span className={`${showVision ? "gradient-text sm:text-3xl text-2xl" : ""}`}>
+            <span
+              className={`${
+                showVision ? "gradient-text sm:text-3xl text-2xl" : ""
+              }`}
+            >
               Vision
             </span>
-            <span className={`${!showVision ? "gradient-text sm:text-3xl text-2xl" : ""}`}>
+            <span
+              className={`${
+                !showVision ? "gradient-text sm:text-3xl text-2xl" : ""
+              }`}
+            >
               Mission
             </span>
           </div>
         </div>
       </div>
       <div className="py-4 flex justify-center">
-        <div className="">
+        <Link href={`/about-us`} className="">
           <SecondaryBtn>Read more...</SecondaryBtn>
-        </div>
+        </Link>
       </div>
     </section>
   );

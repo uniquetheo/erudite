@@ -28,7 +28,7 @@ const AboutPage = () => {
             </div>
           </div>
         </div>
-        <div className="flex flex-col gap-2 p-6 md:p-10 bg-transparent shadow">
+        <div className="flex flex-col gap-2 p-6 md:p-10 bg-slate-50 shadow">
           <p>
             Produced by Handwrite Medya and endorsed by the Ministry of
             Education, The Erudite Challenge is an engaging and competitive quiz

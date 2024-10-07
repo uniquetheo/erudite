@@ -59,7 +59,7 @@ const Footer = () => {
       </div>
       <div className="flex w-full justify-center items-center min-h-10 bg-white">
         <span className="text-xs sm:text-md">
-          Copyright @ 2010-2024 Erudite Challenge
+          Copyright &copy; 2010 - {new Date().getFullYear()} Erudite Challenge
         </span>
         <div className="w-[60px] h-[60px] flex items-center">
           <Image
